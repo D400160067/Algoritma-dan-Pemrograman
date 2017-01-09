@@ -1,0 +1,24 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+float a, b, c, D, X, X1, X2;
+cout << "Masukkan nilai koefisien a : ";
+cin >> a;
+cout << "Masukkan nilai koefisien b : ";
+cin >> b; cout <<
+"Masukkan nilai koefisien c : ";
+cin >> c;
+D = b * b - 4 * a * c;
+cout << "Diskriminan (" << b << " * " << b << " - 4 * " << a << " * "<< c <<") = " << D << endl << endl;
+if (D > 0)
+{ X1 = ((-b+sqrt(D))/(2*a));
+X2 = ((-b-sqrt(D))/(2*a));
+cout << "X1 = " << X1<<endl;
+cout << "X2 = " << X2<<endl; }
+if (D == 0)
+{ X = (-b/(2*a));
+cout << "X1 = X2 = " << X ; }
+if (D < 0) {
+cout<<"akar imajiner"; } }
